@@ -107,10 +107,6 @@ PRODUCT_PACKAGES += \
     libbson \
     Snap
 
-# CMActions
-PRODUCT_PACKAGES += \
-    CMActions
-
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8952 \
@@ -174,6 +170,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
+	
+# MotoActions
+PRODUCT_PACKAGES += \
+    MotoActions
 
 # OMX
 PRODUCT_PACKAGES += \
