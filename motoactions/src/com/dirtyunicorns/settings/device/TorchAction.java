@@ -40,8 +40,8 @@ public class TorchAction implements SensorAction {
             for (final String cameraId : mCameraManager.getCameraIdList()) {
                 CameraCharacteristics characteristics =
                         mCameraManager.getCameraCharacteristics(cameraId);
-                int cOrientation = characteristics.get(CameraCharacteristics.LENS_FACING);
-                if (cOrientation == CameraCharacteristics.LENS_FACING_BACK) {
+                int orient = characteristics.get(CameraCharacteristics.LENS_FACING);
+                if (orient == CameraCharacteristics.LENS_FACING_BACK) {
                     mRearCameraId = cameraId;
                     break;
                 }
