@@ -54,6 +54,7 @@ public class ChopChopSensor implements SensorEventListener, UpdatedStateNotifier
         } else if (! mMotoActionsSettings.isChopChopGestureEnabled() && mIsEnabled) {
             Log.d(TAG, "Disabling");
             mSensorHelper.unregisterListener(this);
+            mSensorHelper.unregisterListener(mProxListener);
             mIsEnabled = false;
         }
     }
